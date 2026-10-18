@@ -1,0 +1,18 @@
+{
+    "api_token": "СГЕНЕРИРУЙ_40_СЛУЧАЙНЫХ_СИМВОЛОВ",
+    "session_ttl": 120,
+    "link_code_ttl": 900,
+    "trust_days": 30,
+    "code_length": 6,
+    "bot_tg_url": "https://t.me/your_bot",
+    "bot_ds_url": "https://discord.com/users/BOT_ID",
+    "bot_max_url": "",
+    "bot_tokens": {
+        "tg": "123456:AAH..."
+    },
+    "bot_api_proxy": {
+        "tg": "https://your-tg-proxy.workers.dev",
+        "ds": "https://your-ds-proxy.workers.dev"
+    },
+    "discord_public_key": "PASTE_PUBLIC_KEY_FROM_DEVELOPER_PORTAL"
+}
