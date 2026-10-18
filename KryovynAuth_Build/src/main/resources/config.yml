@@ -1,0 +1,35 @@
+api:
+  url: "https://your-domain.com/api/auth.php"
+  token: "YOUR_TOKEN_HERE"
+  timeout: 8
+fail-mode:
+  behavior: ALLOW
+  kick-message: |
+    &c&lСЕРВИС АВТОРИЗАЦИИ НЕДОСТУПЕН
+limbo:
+  blindness: true
+  slowness: true
+  block-chat: true
+  block-commands: true
+  block-movement: true
+  block-rotation: false
+  block-interact: true
+  block-damage: true
+trust-days: 30
+messages:
+  prefix: "&8[&dKN&8] "
+  code-sent: "%prefix%&fКод отправлен в &d%platform%&f. Введи: &e/knlogin %example%"
+  code-wrong: "%prefix%&cНеверный код. Осталось: %left%"
+  code-ok: "%prefix%&a&l✓ Вход подтверждён!"
+  code-expired: "%prefix%&cСессия истекла. Перезайди."
+  already-auth: "%prefix%&eТы уже авторизован."
+  trust-ok: "%prefix%&a✅ Устройство сохранено на %days% дней."
+  trust-no: "%prefix%&7Хорошо, не сохраняем."
+  link-start: |
+    %prefix%&7Привязка к &b%platform%&7:
+    &f1. Открой: &b%bot_url%
+    &f2. Отправь: &e%command%
+  link-already: "%prefix%&eУже привязано к %platform%."
+  devices-none: "%prefix%&7Нет доверенных устройств."
+  logoutall-ok: "%prefix%&aВсе устройства сброшены."
+  only-player: "%prefix%&cТолько для игроков."

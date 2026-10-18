@@ -1,0 +1,22 @@
+name: KryovynAuth
+version: 1.0.0
+main: tech.kryovyn.auth.KryovynAuth
+api-version: '1.16'
+author: Kryovyn Studio
+description: Advanced 2FA + account linking
+website: http://195.208.21.210
+commands:
+  knmenu: { description: Menu, usage: /knmenu, aliases: [knauth, kna] }
+  knlogin: { description: Login, usage: /knlogin <code>, aliases: [login, 2fa, auth] }
+  kncode: { description: Request code, usage: /kncode <tg|ds|max|all>, aliases: [code] }
+  kntrust: { description: Trust device, usage: /kntrust <yes|no>, aliases: [trust] }
+  knlink: { description: Link, usage: /knlink <tg|ds|max>, aliases: [link] }
+  knprofile: { description: Profile, usage: /knprofile, aliases: [profile, mp] }
+  kndevices: { description: Devices, usage: /kndevices, aliases: [devices] }
+  knlogout: { description: Logout all, usage: /knlogout, aliases: [logout, logoutall] }
+  kntg: { description: TG menu, usage: /kntg, aliases: [tg] }
+  knds: { description: DS menu, usage: /knds, aliases: [ds] }
+  knreload: { description: Reload, usage: /knreload }
+permissions:
+  kryovyn.auth.bypass: { description: No 2FA, default: op }
+  kryovyn.auth.admin: { description: Admin commands, default: op }
