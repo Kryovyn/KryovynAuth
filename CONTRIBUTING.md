@@ -26,4 +26,26 @@
 1. Форкни репозиторий
 2. Создай ветку: `git checkout -b feature/my-feature` или `fix/my-bug`
 3. Соблюдай стиль кода (4 пробела в Java, 2 в YAML)
-4. Пиши понятные коммиты в формате [Conventional Commits](https://www.conventionalcommits.org/):
+4. Пиши понятные коммиты в формате [Conventional Commits](https://www.conventionalcommits.org/)
+5. Убедись, что `mvn clean package` проходит без ошибок
+6. Открой PR с описанием: **что**, **зачем**, **как проверить**
+
+## 🧪 Тестирование
+
+Перед PR проверь плагин хотя бы на:
+
+- Paper 1.20.4 (основная цель)
+- Spigot 1.16.5 (минимальная поддержка)
+- Paper 1.21.x (последняя поддержка)
+
+## 📜 Стиль кода
+
+- Java 17, без preview-фич
+- Никаких `System.out.println` — используй `plugin.getLogger()`
+- Все сообщения игроку — через `config.yml`, никакого хардкода
+- Null-safety: `Objects.requireNonNull` и `@Nullable`
+
+## ❓ Вопросы
+
+- 💬 Telegram: [@kryovyn](https://t.me/kryovyn)
+- 🌐 Сайт: kryovyn.store
